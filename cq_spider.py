@@ -14,8 +14,6 @@ meta_data={}
 一本不要，掏的数量为0
 
 
-
-
 '''
 
 from selenium import webdriver
@@ -330,27 +328,3 @@ b.pack()
 m=tk.Message()
 m.pack()
 window.mainloop()
-
-
-'''
-borrow_table_copy.ix[index_,'录井图']=if borrow_table.ix[index_,'录井图']==1:'录井图('+str(borrow_table.ix[index_,'录井图'])+')' else:''
-            borrow_table_copy.ix[index_,'试油总结']=if borrow_table.ix[index_,'试油总结']==1:'试油('+str(borrow_table.ix[index_,'试油总结'])+')' else:''
-            borrow_table_copy.ix[index_,'完井报告']=if borrow_table.ix[index_,'完井报告']==1:'完井('+str(borrow_table.ix[index_,'完井报告'])+')' else:''
-            borrow_table_copy.ix[index_,'岩心分析']=if borrow_table.ix[index_,'岩心分析']==1:'岩心('+str(borrow_table.ix[index_,'岩心分析'])+')' else:''
-'''
-
-'''
-
-            borrow_table_copy.ix[index_,'录井图']= '录井图' if borrow_table.ix[index_,'录井图']==1 else ''
-            borrow_table_copy.ix[index_,'试油总结']='试油' if borrow_table.ix[index_,'试油总结']==1 else ''
-            borrow_table_copy.ix[index_,'完井报告']='完井' if borrow_table.ix[index_,'完井报告']==1 else ''
-            borrow_table_copy.ix[index_,'岩心分析']='岩心' if borrow_table.ix[index_,'岩心分析']==1 else ''
-            
-            
-            
-            borrow_table_copy.ix[index_,'录井图']=borrow_table.ix[index_,'录井图']
-            borrow_table_copy.ix[index_,'试油总结']=borrow_table.ix[index_,'试油总结']
-            borrow_table_copy.ix[index_,'完井报告']=borrow_table.ix[index_,'完井报告']
-            borrow_table_copy.ix[index_,'岩心分析']=borrow_table.ix[index_,'岩心分析']
-
-'''
